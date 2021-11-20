@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_item_food"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_detail_height"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/rendang"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="@drawable/drop_shadow_up"
+                android:layout_gravity="bottom|center"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="@dimen/small_margin_padding"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    tools:text="@string/price"/>
+
+                <ImageView
+                    android:id="@+id/img_item_star"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/four_star" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_favorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="@dimen/small_margin_padding"
+                android:src="@drawable/favorite_logo" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small_margin_padding"
+            android:layout_marginEnd="@dimen/small_margin_padding"
+            android:layout_marginStart="@dimen/small_margin_padding"
+            android:layout_marginBottom="@dimen/medium_margin_padding">
+
+            <TextView
+                android:id="@+id/tv_title_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                tools:text="@string/food_name" />
+
+            <TextView
+                android:id="@+id/tv_item_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_food"
+                android:layout_marginTop="@dimen/small_margin_padding"
+                android:textSize="16sp"
+                tools:text="@tools:sample/lorem/random" />
+
+            <Button
+                android:id="@+id/btn_order"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_detail"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/medium_margin_padding"
+                android:text="@string/order" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

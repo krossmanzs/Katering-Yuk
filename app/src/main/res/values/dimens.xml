@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin_padding">8dp</dimen>
+    <dimen name="medium_margin_padding">16dp</dimen>
+    <dimen name="large_margin_padding">24dp</dimen>
+
+    <dimen name="img_item_width">100dp</dimen>
+    <dimen name="img_item_height">100dp</dimen>
+    <dimen name="image_detail_height">300dp</dimen>
+</resources>

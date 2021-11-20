@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Katering Yuk</string>
+    <string name="food_name">Nama Makanan</string>
+    <string name="price">Rp. 10.000</string>
+    <string name="about">Tentang</string>
+    <string name="share">Bagikan</string>
+    <string name="favorite">Favorit</string>
+    <string name="detail">Detail</string>
+    <string name="order">Pesan</string>
+    <string name="profile_name">Cornelius Linux</string>
+    <string name="profile_email">radi.adi78@gmail.com</string>
+</resources>
